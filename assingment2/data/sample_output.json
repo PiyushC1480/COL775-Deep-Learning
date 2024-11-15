@@ -1,0 +1,32 @@
+[
+    {
+        "Problem": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "linear_formula": "add(n1,const_100)|subtract(const_100,n0)|multiply(#0,const_100)|divide(#2,#1)|subtract(#3,const_100)|",
+        "predicted": "add(n1|subtract(const_100,n0)|multiply(#0,const_100)|divide(#2,#1)|subtract(#3,const_100)|",
+        "answer": 38
+    },
+    {
+        "Problem": "what will be the difference between simple and compound interest at 14 % per annum on a sum of rs . 1000 after 4 years ?",
+        "linear_formula": "divide(n0,const_100)|add(#0,const_1)|multiply(n1,#0)|multiply(n2,#2)|power(#1,n2)|multiply(n1,#4)|subtract(#5,n1)|subtract(#6,#3)|",
+        "predicted": "divide(n0,const_100)|add(#0,const_1)|multiply(n1,#0)|multiply(n2,#2)|power(#1,n2)|multiply(n1,#4)|subtract(#5,n1)|subtract(#6,#3)|",
+        "answer": 129
+    },
+    {
+        "Problem": "there are 28 stations between hyderabad and bangalore . how many second class tickets have to be printed , so that a passenger can travel from any station to any other station ?",
+        "linear_formula": "add(n0,const_1)|add(#0,const_1)|multiply(#0,#1)|",
+        "predicted": "add(n0,const_1)|add(#0,const_1)|multiplyadd(#0,#1)|",
+        "answer": 870
+    },
+    {
+        "Problem": "the sum of all the integers s such that - 26 < s < 24 is",
+        "linear_formula": "negate(n0)|add(#0,const_1)|add(#1,const_1)|add(#1,#2)|",
+        "predicted": "negate(n0)|add(#0,const_1)|add(#1,const_1)|add(#1,#2)|",
+        "answer": -49
+    },
+    {
+        "Problem": "if n is an integer and 101 n ^ 2 is less than or equal to 10000 , what is the greatest possible value of n ?",
+        "linear_formula": "divide(n2,n0)|sqrt(#0)|floor(#1)|",
+        "predicted": "divide(const_1,n0)|sqrt(#0)|floor(#1)|",
+        "answer": 9
+    }
+]
